@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 11, 2021 at 08:35 AM
+-- Generation Time: Apr 19, 2021 at 06:52 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -110,7 +110,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `id_user`, `city`, `zip`, `address`, `id_laptop`, `duration`, `totprice`, `pickupdate`, `status`) VALUES
-(51, 15, 'Central Jakarta', '97021', '2966 Sycamore Road', 5, '2', '1000000', '2021-04-11', 'Pending');
+(52, 16, 'Central Jakarta', '97021', '2966 Sycamore Road', 6, '2', '500000', '2021-04-14', 'Finished');
 
 -- --------------------------------------------------------
 
@@ -145,7 +145,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `phone`, `nama_user`, `password`) VALUES
-(15, 'aryadotid21@gmail.com', '+62895613367705', 'Arya Dyas', '40264026');
+(16, 'aryadotid21@gmail.com', '+62895613367705', 'Arya Dyas', '40264026');
 
 -- --------------------------------------------------------
 
@@ -250,7 +250,7 @@ ALTER TABLE `operators`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `questions`
@@ -262,7 +262,7 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Constraints for dumped tables
